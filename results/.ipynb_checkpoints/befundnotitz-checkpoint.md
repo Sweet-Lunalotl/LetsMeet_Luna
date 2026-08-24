@@ -11,8 +11,11 @@ Telefonnummern sind nicht einheitlich formatiert. Gibt weder 0800 noch 0900 Numm
 
 E-Mails sind unique, keine Dopplungen.
 
-"Interessiert an" hat die Werte ['w', 'm', 'mw']. "mw" ist kein Sinnvoller Werte. Und die Spalte für Geschlecht hat die Werte ['m', 'w', 'nb']. Problem: Es gibt kein Interessiert an 'nb'.
+"Interessiert an" hat die Werte ['w', 'm', 'mw']. "mw" ist kein Sinnvoller Werte. Und die Spalte für Geschlecht hat die Werte ['m', 'w', 'nb']. Problem: Es gibt kein Interessiert an 'nb'. Ich habe mich dazu entschieden, dass alle Bisherigen Menschen jetzt auch an nicht binären Menschen interessiert sind, weil sonst kaum jemand an diesen interessiert wäre. In Zukunft wird das zusätzlich abgefragt.
 
-Die Spalte für die Hobbys ist einfach nur wild...
+Die Spalte für die Hobbys ist einfach nur wild... Nicht jede Person hat 5 Hobbies angegeben.
 
 Geburtsdatum ist kein Datum. (Jetzt schon)
+
+Ein grobes ERD erstellt als Vorbereitung zur Erstellen der Tabellen.
+[ERD](../images/grobesERD.png)
