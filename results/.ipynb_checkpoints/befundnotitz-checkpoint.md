@@ -19,3 +19,5 @@ Geburtsdatum ist kein Datum. (Jetzt schon)
 
 Ein grobes ERD erstellt als Vorbereitung zur Erstellen der Tabellen.
 [ERD](../images/grobesERD.png)
+
+Adresse wurde ausgelagert, so dass es möglilch ist, dass ein Kunde mehr als eine Adresse hat.
