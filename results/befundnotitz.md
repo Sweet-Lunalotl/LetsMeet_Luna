@@ -7,7 +7,7 @@ Alle Datentypen sind Objekte (nicht gut).
 
 Bei 10 Einträgen fehlen die Hobbies, sonst sind die Daten vollständig.
 
-Telefonnummern sind nicht einheitlich formatiert. Gibt weder 0800 noch 0900 Nummern. Kürzeste Telefonummer (sowas wie Klammern, Leerzeichen, Minus etc. mitgezaählt) hat 4 Stellen nach der Vorwahl. Ungewöhnlich kurz. Vielleicht eine alte Festnetznummer.  Kunde Sagt, validierung, dass es ein Mensch ist. Daraus folgt -> Telefonummer müssen unique sein, was validiert werden konnte.
+Telefonnummern sind nicht einheitlich formatiert. Gibt weder 0800 noch 0900 Nummern. Kürzeste Telefonummer (sowas wie Klammern, Leerzeichen, Minus etc. mitgezaählt) hat 4 Stellen nach der Vorwahl. Ungewöhnlich kurz. Vielleicht eine alte Festnetznummer.  Kunde Sagt, validierung, dass es ein Mensch ist. Daraus folgt -> Telefonummer müssen unique sein, was validiert werden konnte. Habe mich entschieden alles zu löschen aus der Telefonummer was keine Zahl ist (damit automatisierte SMS verschickt werden können zur Verifizierung der Telefonnummer). Damit ist die kürzeste 8-stellig. Und hat jetzt den Datentyp int64
 
 E-Mails sind unique, keine Dopplungen.
 
@@ -15,4 +15,4 @@ E-Mails sind unique, keine Dopplungen.
 
 Die Spalte für die Hobbys ist einfach nur wild...
 
-Geburtsdatum ist kein Datum.
+Geburtsdatum ist kein Datum. (Jetzt schon)
