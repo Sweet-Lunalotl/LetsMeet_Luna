@@ -1,7 +1,7 @@
 # Akt 1
 
 ## Die Reise zur ersten Normalform
-In der Spalte "Straße Nr, PLZ Ort" ist an drei Stellen nach der allen angaben noch ", Hansestadt" angehängt. Dies habe ich entfernt, da ich mir sehr sicher bin, dass diese Angabe keine Relevanz hat.
+In der Spalte "Straße Nr, PLZ Ort" ist an drei Stellen nach der allen angaben noch ", Hansestadt" angehängt. Dies habe ich entfernt, da ich mir sehr sicher bin, dass diese Angabe keine Relevanz hat. Musste doch wieder angefügt werden, damit der Check funktioniert
 
 Alle Datentypen sind Objekte (nicht gut).
 
@@ -29,3 +29,5 @@ Adresse wurde ausgelagert, so dass es möglilch ist, dass ein Kunde mehr als ein
 Es gibt anscheinend nur 220 einzigartige Hobbies, trotz Freitexteingabe.
 
 Die Spalte Hobby6 hat nur einen einzigen Wert und kann deswegen gedropped werden
+
+Bei der postleitzahl gibt es welche mit führenden nullen und überraschend kurze (4 Stellen)
