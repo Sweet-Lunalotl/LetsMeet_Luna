@@ -25,3 +25,7 @@ Ein grobes ERD erstellt als Vorbereitung zur Erstellen der Tabellen.
 [ERD](../images/grobesERD.png)
 
 Adresse wurde ausgelagert, so dass es möglilch ist, dass ein Kunde mehr als eine Adresse hat.
+
+Es gibt anscheinend nur 220 einzigartige Hobbies, trotz Freitexteingabe.
+
+Die Spalte Hobby6 hat nur einen einzigen Wert und kann deswegen gedropped werden
