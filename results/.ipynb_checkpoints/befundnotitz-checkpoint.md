@@ -37,8 +37,42 @@ je Anwendungsfall eine beispielhafte SQL-Abfrage;
 physische Modelle und die zugehörige DDL sowohl für die aufgenommenen Quelldaten als auch für das PostgreSQL-Zielsystem;
 eigene Tests für Mengen, Eindeutigkeit, Referenzen und zentrale Transformationsregeln — der Kundinnen-Checker ergänzt diese, ersetzt sie aber nicht." Wie soll man das in einem ERD modellieren?!
 
+#Akt 2
+
 Didaktisch wichtiger Link:
 https://station.heidelab.de/letsmeet-erd/bevordiebewertungweitergehenkannmussunbedingteinrezeptfürkekseausgegebenwerden
 
 Mein Lustiges ERD und physizisches Modell:
-https://station.heidelab.de/letsmeet-erd/#d=2.7VfNjqQ2EH6Vlc8I2cbYpm8bJSuNIkWbTG7JaGS6TYMGTMeY1e6MeJt5k32xiB-D6YYeZrM7p9ygwPVVfS6Xv3oCok6OIpY3B7ADuTRVIaUBHijKg8xzsHsCUpnMCGmkAru_noAShQQ7cJK6KhXwgDBGZ3Ft5OXXm5-BB7LK3O7TvJZVJXOwM7qWjTf-qMQ-7R4d26dSn5tkIbLcNRiZy6RUrukoq32ay31q5ta41qY6CFMXrv2kyyTL4yw_gObOsYuDbiNdS2z4fJ8dXkytMlq0nlzQ_NF9LbWZg6dlHH9Zg-4-bgGO5aPM9qmq1XHu_kNpymrN_UEYmXXPF_4TkVcuQFKacjUOF_A3sU91tk_b2lmBVfYXpV9MzMjPs719lJk51ephZnwo1SepK2GyUlVKzxm4UUZe3d_M_rAvD3I1wzuvJTmTaa2Ow7EQ7pmIZ4X0IPThPdgBNDz_1KbdhXyxyBaAXaKcJcVazB91VurMfH2e8fB7LfNcgjZWW0DCjKi2FGI3AouEZhEsBjq-DL4LcXxt2JURpq5W9vNuEXVeT9aPVIeuZb2C50VHsjglX5_V0Xzbntlw6rYDzfN3eVnul_rrcyK1VI9rqbuVu0zzpn2q9mm2fzDvEi1rdaj2qUhMJVSixVG-E2rd-V3jgVNZZe2xakv-ybrePYHPYMc58THmBEU8YIQHkQe-gF3AkI8wJCELEUSEc9Z448HoF2JIfcwxDHAAMQtDSLuVmIc-g4RyzKIIkoCQxhuY7tehkGIfMcIhCxjGKOiXhZHPAkgRpVEYId54Q6VfBWOM-SGCOOIBJgGL2mVuhVxLkSPsBxAGNOA8IpTixnP2aoiVIOazkCJIQ84Y5T1qxP02M0qDkCBKosYDf9cQQhjLx_6hp_jy-YVd7H-CNukw9BkmIY1wyDHGCHfwJOJ-yDjFkNMQRgRthy_EcQ5BMPIxDmnECeQUYUY6CMQDH6GIERZwSBBqGq8tQFmIdt2kMIyI217VN9KsFSISTiU7lnAq9UOtEtN-HzQJ8EB1EvmiNhmvyo-__jfZMTo5vwe_vwjpk2-bzoUc2Zz9uURZSH-jNPHWGP0wuPSAlsmf_e7djPumZXLbhXW2sO0mf8jE6aq3Mm9f1Sx7PGVvW-vm3OcaaSHzS23UgwYTqL0aN4NOyulMI10L5C0ZJVNy84tvc4oXKm0ho29TZ9On93F3k-sfRciE9EtxSoRUxx-H5ZAfTuS7d_hm6hcU6Uj-BKOchjmuuF9qnUrWm4HWiQnPiLkS5dZd-S4n4gJ3RJqH4VLntNvBVSrM_ULvWaVuue28kAY-S8Nxci3wVcI2wr5U0htw-3mjrVjH-o-dNyZinU4-oHTi-H9qr1Ar5GwO6IkMLogsxPF1p3vcZvQmx2uhSvEbAy_eP3bodMh1bsdBV98v6ep78bZUvyW71xvl5egnrfCHnc6HjdeK1mEWgL3474zYzk6wn3k6Y2DHIjuKdFZirRT1U1lnDcfJDU9YynrABE9gynrAHE9oyoaKIOo9UN5OWuo8XgS7CUzZkEc7o1HTNM2_
+https://station.heidelab.de/letsmeet-erd/#d=2.7VfNjts2EH6VgGdBICmKpHxL0AZYFCjSbm9tYFD2yBJWolyJCpJd6G32TfbFCv1TtuT1Jt1FD73JI898M9-M5ucBqSo6qBBu9miDUjBlBmCQg7J8D2mKNg8ItEmMAgMabf58QFplgDboCEWZa-QgZUyRhJWB87c3PyEHJaW53cVpBWUJKdqYooLaGf-o1S5uHy3Zl7w4FUGmktQWGEghyrUtOkC5i1PYxWYuDavClHtlqsyWH4s8StIwSfeo_mzJ1b5oPF0LrH-9TfbPhlaaQjWWbND03v6ZF2YOHudh-G0Nun15DXAI95DsYl3pw9z8x9zk5Zr5vTKQtM9n9iOVljZAlJt81Q8b8Fe1i4tkFze1swKrh7_o4tnADHyd5fYeEnOs9N1MeJfrL1CUyiS5LnUxZ-BGG7iY32T4wy7fLzDRR_jZaUhOIK70of8slP1NhLNCulPF_j3aINI_f2jCbl0-UxoKYFDRlkqGnLEUlFkL4FOR5EVinh5npPxWQZpCz4WySiG0PVhCJcuOXtSxPM3UYc3T0ihTlSv5_LyIOq-nZV5H6BL0Hsyy-y8yBNkxenrUhxVbV-asrJrOtNYvi6fHCArQ92uh25W7jPRDeSp3cbK7M--iAiq9L3exikypdFSoA7xTuvUKHfMyaT6rpuQfBtObB_QVbaRkLqWSkUB6gkkvcNA3tPEEcQnFzBc-wYRJKWpn_DA6RYq5SyXFHvUwFb6PeatJpe8KzLikIggw8xirnZ7pTo_4nLpEMImFJyglXqfmB67wMCecB35AZO30lX4RTAjh-gTTQHqUeSJo1OwKuRSiJNT1MPa4J2XAOKe1Y-Wq95UR4QqfE8x9KQSXHWog3SYyzj2fEc6C2kF_VRhjHMJ999BRfP78TLa6P-EhaN93BWU-D6gvKaWEtvAskK4vJKdYch8HjFwPn6nDHIJR4lLq80AyLDmhgrUQRHouIYFgwpOYEVLXTlNokKlGb9owjAqb9tQ10qRZRABPpTmWcAzFXaUj07zvdxLkoPKo0sXdZByVn375sbVjNHI6B__9JaQLnkzBT1Pk6uhPV5SF8K9cTZw1Rj_2Jh1UQPRHl72bMW8FRLetWyeKTdu5hTSyutDvEHUzxoqeWnOub61Xxz7fkRYin-1Gk_hvez52bniTG8OwvNqNaZc62ZouufaWHLMpuPkovDrEs71tIaLv29emV-_DdoYXr0XIhPRzdowU6MPrYVnk-xP59lS_mvqFHXUkf4LRVgsdNbZLzVRD9WKgZ1jyT1g6tXRdVlb6-KtnSJPT6bONldkudKNV6pYb0TOe0xPPLSP_RcLsOdYeHU3F2jTSMxrbJfh_Ii8QqWB2B3REemdEZurwsm959IW8dUiDBn1j4MVpMxydFrns7AraLu3VW_W9VL8lu6_RFs9PPxgWf9zu-bh2mqW1vwUwm4R0uJ2wnITecBYNp0grZYOUEz5J_fFyoxOWHixQRicwPVigkk5oenCVYNJZ4LK5tPSpvwS3F5imp3LBg7qu638A
+
+Ich habe die MongoDB in einen df geschrieben, damit ich mich mit den eigenheiten von einer MongoDB nicht beschäftigen muss
+
+In der XML und der MongoDB sind die Einträgen in der gleichen Reiehenfolge sortiert. Ungewöhnlich, macht es aber deutlich einfacher die beiden Datenquellen miteinander zu vergleichen.
+
+Name und Telefonummer sind in der MongoDB anders formatiert als in dem Datafram den ich aus der xml gebaut habe. Ich muss diese zunächst in eine einheitliche Form bringen
+
+Der Kunde hat spezifiziert, dass die MongoDB die aktuelleren Daten hat
+Abweichungen zwischen der MongoDB und der XML:
+1. Bei dem Vornamen fällt folgendes raus:
+        Vorname Vorname_dm
+294     Joyeux      Joyeux
+472   Hosseini    Hosseini
+480   Qarizada    Qarizada
+741  Thibaudet   Thibaudet
+873     Benoit      Benoit
+907     Nazemi      Nazemi
+Die Vornamen sind alle identisch geschrieben, somit kann der einzige Unterschied führende Leerzeichen sein
+2. Kunde mit ID = 62 hat den Namen von Pommer nach Vogelsang geändert (Heirat oder Scheidung)
+3. Bei der Telefonummer gibt es Abweichungen bei dem Kunde mit der ID 500 von 0531638986 zu 0531771204. Dies scheint eine aktualisierung der Reufnummer zu sein und wollte übernummen werden.
+4. Bei der Telefonummer gibt es Abweichungen bei dem Kunde mit der ID 707 von 0617162808 zu 0. Das deutet darauf hin, dass der Nutzer die Nummer entfernen wollte und eine wiederherstellung der Nummer könnte rechtlich schwirig sein, weshalb diese Nummer einfach gelöscht werden solle
+
+Nachdem die verschachtelten Einträge aus der MongoDB in eigene Dataframes geschrieben wurde, fällt auf, dass der Dataframe für Freund leer ist. Das ist seltsam. Anscheindend sind die Daten nach wie vor verloren
+
+Es wurden 300 Nachrichten geschrieben. Die Likes sehen gut aus mit 500 Einträgen. 
+
+Die KundenID funktioniert übergreifend über die Dataframes df, dm, messages_df, likes_df. Deswegen treffe ich die Entscheidung mit der kunde_id zu arbeiten, statt der Empfehlung der read me zu folgen, die die email vorschlägt. Denn ich habe damit gerechnet, dass emails geändert wurden, was nicht der Fall war.
+
+Nach einer kurzen Internetrechere kam raus, dass man mit dem Datentyp BYTEA Bilder speichern kann. Also nutze ich dieses Format für die Bilder.
+
+
+
