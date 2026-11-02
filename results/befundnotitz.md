@@ -15,7 +15,7 @@ Telefonummern sind unique.
 
 Geschlecht kann die Werte m w nb haben
 
-"Interessiert an" hat die Werte ['w', 'm', 'mw']. "mw" ist kein Sinnvoller Werte. Und die Spalte für Geschlecht hat die Werte ['m', 'w', 'nb']. Problem: Es gibt kein Interessiert an 'nb'. Ich habe mich dazu entschieden, dass alle Bisherigen Menschen jetzt auch an nicht binären Menschen interessiert sind, weil sonst kaum jemand an diesen interessiert wäre. In Zukunft wird das zusätzlich abgefragt.
+Interessiert an hat die Werte ['w', 'm', 'mw']. "mw" ist kein Sinnvoller Werte. Und die Spalte für Geschlecht hat die Werte ['m', 'w', 'nb']. Problem: Es gibt kein Interessiert an 'nb'. Ich habe mich dazu entschieden, dass alle Bisherigen Menschen jetzt auch an nicht binären Menschen interessiert sind, weil sonst kaum jemand an diesen interessiert wäre. In Zukunft wird das zusätzlich abgefragt.
 
 Die Spalte für die Hobbys ist einfach nur wild... Nicht jede Person hat 5 Hobbies angegeben.
 
@@ -26,16 +26,16 @@ Ein grobes ERD erstellt als Vorbereitung zur Erstellen der Tabellen.
 
 Adresse wurde ausgelagert, so dass es möglilch ist, dass ein Kunde mehr als eine Adresse hat.
 
-Es gibt anscheinend nur 220 einzigartige Hobbies, trotz Freitexteingabe.
+Es gibt anscheinend nur 220 einzigartige Hobbies, trotz Freitexteingabe. Das ist sehr ungewöhnlich
 
 Die Spalte Hobby6 hat nur einen einzigen Wert und kann deswegen gedropped werden
 
-Bei der postleitzahl gibt es welche mit führenden nullen und überraschend kurze (4 Stellen)
+Bei der postleitzahl gibt es welche mit führenden nullen und überraschend kurze (4 Stellen). Scheint realistisch zu sein.
 
 In der read me steht unter Modellierungsauftrag "Datenschutz: Datenarten, Rechtsgrundlage, Schutzbedarf und technische/organisatorische Maßnahmen;
 je Anwendungsfall eine beispielhafte SQL-Abfrage;
 physische Modelle und die zugehörige DDL sowohl für die aufgenommenen Quelldaten als auch für das PostgreSQL-Zielsystem;
-eigene Tests für Mengen, Eindeutigkeit, Referenzen und zentrale Transformationsregeln — der Kundinnen-Checker ergänzt diese, ersetzt sie aber nicht." Wie soll man das in einem ERD modellieren?!
+eigene Tests für Mengen, Eindeutigkeit, Referenzen und zentrale Transformationsregeln — der Kundinnen-Checker ergänzt diese, ersetzt sie aber nicht. Wie soll man das in einem ERD modellieren?!
 
 #Akt 2
 
@@ -46,7 +46,7 @@ Ich habe die MongoDB in einen df geschrieben, damit ich mich mit den eigenheiten
 
 In der XML und der MongoDB sind die Einträgen in der gleichen Reiehenfolge sortiert. Ungewöhnlich, macht es aber deutlich einfacher die beiden Datenquellen miteinander zu vergleichen.
 
-Name und Telefonummer sind in der MongoDB anders formatiert als in dem Datafram den ich aus der xml gebaut habe. Ich muss diese zunächst in eine einheitliche Form bringen
+Name und Telefonummer sind in der MongoDB anders formatiert als in dem Dataframe den ich aus der xml gebaut habe. Ich muss diese zunächst in eine einheitliche Form bringen
 
 Der Kunde hat spezifiziert, dass die MongoDB die aktuelleren Daten hat
 Abweichungen zwischen der MongoDB und der XML:
@@ -63,7 +63,7 @@ Die Vornamen sind alle identisch geschrieben, somit kann der einzige Unterschied
 3. Bei der Telefonummer gibt es Abweichungen bei dem Kunde mit der ID 500 von 0531638986 zu 0531771204. Dies scheint eine aktualisierung der Reufnummer zu sein und wollte übernummen werden.
 4. Bei der Telefonummer gibt es Abweichungen bei dem Kunde mit der ID 707 von 0617162808 zu 0. Das deutet darauf hin, dass der Nutzer die Nummer entfernen wollte und eine wiederherstellung der Nummer könnte rechtlich schwirig sein, weshalb diese Nummer einfach gelöscht werden solle
 
-Nachdem die verschachtelten Einträge aus der MongoDB in eigene Dataframes geschrieben wurde, fällt auf, dass der Dataframe für Freund leer ist. Das ist seltsam. Anscheindend sind die Daten nach wie vor verloren
+Nachdem die verschachtelten Einträge aus der MongoDB in eigene Dataframes geschrieben wurde, fällt auf, dass der Dataframe für Freunde leer ist. Das ist seltsam. Anscheindend sind die Daten nach wie vor verloren
 
 Es wurden 300 Nachrichten geschrieben. Die Likes sehen gut aus mit 500 Einträgen. 
 
@@ -83,3 +83,5 @@ CREATE TABLE freunde (
 )
 """
 Da der Fremdschlüssen nicht aus den gleichen Spalten bestehen darf, habe ich einen neuen PK eingeführt
+
+Beim befüllen der Tabellen mit Zahlen trete ich mir einem Fehler nach dem anderen ein. Ada sagt es sei ein Fehler in Mail, weil die nicht unique sind. Sie sind aber unique!!! Es sind auch keine NANs drin
