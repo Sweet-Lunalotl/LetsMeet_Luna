@@ -58,7 +58,7 @@ Abweichungen zwischen der MongoDB und der XML:
 741  Thibaudet   Thibaudet
 873     Benoit      Benoit
 907     Nazemi      Nazemi
-Die Vornamen sind alle identisch geschrieben, somit kann der einzige Unterschied führende Leerzeichen sein
+Die Vornamen sind alle identisch geschrieben, somit kann der einzige Unterschied führende Leerzeichen sein. Ich habe die führende Leerzeichen im df entfernt.
 2. Kunde mit ID = 62 hat den Namen von Pommer nach Vogelsang geändert (Heirat oder Scheidung)
 3. Bei der Telefonummer gibt es Abweichungen bei dem Kunde mit der ID 500 von 0531638986 zu 0531771204. Dies scheint eine aktualisierung der Reufnummer zu sein und wollte übernummen werden.
 4. Bei der Telefonummer gibt es Abweichungen bei dem Kunde mit der ID 707 von 0617162808 zu 0. Das deutet darauf hin, dass der Nutzer die Nummer entfernen wollte und eine wiederherstellung der Nummer könnte rechtlich schwirig sein, weshalb diese Nummer einfach gelöscht werden solle
@@ -91,3 +91,16 @@ Ich habe profilbild in text umgewandelt, weil bytea mir viele Probleme gemacht h
 Messages und Likes hatten unterschiedliche Datenformate. Habe ich behoben.
 
 Ich weiß nicht wie das mit den Nachrichten in messages_df gedacht war. Wie bereits argumentiert ergibt es keinen Sinn die email als primary key zu benutzen, da sich diese ändern kann. Also möchte ich die to_email auch durch eine Kunde_id ersetzen und so die Tabellen auch verknüpfen könnnen. Als primary nutze ich dann einen srial, da man keinen zusammengesetzten Primärschlüssen aus einer Tabelle benutzen kann.
+
+Hab alle views geschrieben und den check gemacht. Bei Telefon wird mir gesagt, dass alle abweichen bis auf zwei. Ich vermute das liegt daran, dass ich alle Telefonummern einheitlich formatiert habe, eine Telefonummer 0 ist und vermutlich eine Nummer so formatiert war wie ich es dann geändert habe. Ich halte es nicht für sinvoll die korrekte Formatierung wieder aus meinem Code zu entfernen und lebe damit, dass das gate rot bleibt. Besonders weil ich schon viel zu viel Freizeit in dieses Projekt gegeossen habe und es schon 20:40 Uhr am Sonntag ist.
+
+Folgendes Gate blockiert ebenfalls: 
+"Interessen vollständig [blockiert]
+    Interessen: 1.576 von 1.609 Zeilen.
+    66 Zeile(n) aus der Quelle fehlen, z. B. ‹antonioj..böhnke@d-ohnline.kom | m›, ‹antonioj..böhnke@d-ohnline.kom | w›, ‹bernd.roelfs@iunitimail.te | m›.
+    33 Zeile(n) im Bestand kommen so in der Quelle nicht vor, z. B. ‹antonioj..böhnke@d-ohnline.kom | mw›, ‹bernd.roelfs@iunitimail.te | mw›, ‹christian.knobloch@d-ohnline.te | mw›."
+
+Ich kann den Fehler nicht finden. Ich habe die Originaldaten ohne Bearbeitung übernommen. Bereits in Akt1 hat bernd.roelfs@iunitimail.te das Interesse mw. In der Fehlermeldung ist die erste email antonioj..böhnke@d-ohnline.kom bei fehlen doppelt und bei kommt nicht in der quelle vor nur ein mal. In meinem df sind 1576 unterschiedlkiche Emails und 0 duplicats. Es gibt auch 1576 befüllte Zelle bei Interessiert an mit 0 nans.  antonioj..böhnke@d-ohnline.kom hat als Interessiert an mw. Das gleiche gilt für bernd.roelfs@iunitimail.te.
+Hypothese: Die Fehlermeldung sagt, dass 33 mal etwas da ist was nicht in der Quelle war. Dies betrifft nur welche, die als Interesse mw haben. In meinem df haben genau 33 Einträge als Interesse mw. Also muss ich wohl 33 mal das Interesse m oder w durch mw ersetzt haben. Das habe ich aber nicht. Ich habe Interesse an in meinem Code nie bearbeitet. Somit vermute ich, dass der Tester gegen falsche Daten testet. Also dass du Berndt mw eingefügt hast, nachdem du den Tester geschrieben hast. Wenn das zutrifft, habe ich gerade über 40 Minuten mit Debuggin verbracht, wegen eines Fehler, den ich nicht gemacht habe.
+
+Das ist jetzt der Punkt wo ich abgebe. In Notebooks ist die Version mit der ich gearbeitet habe, in results habe ich das noch ein bisschen aufgeräumt.
