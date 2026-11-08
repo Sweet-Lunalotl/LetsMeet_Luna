@@ -88,4 +88,6 @@ Beim befüllen der Tabellen mit Zahlen trete ich mir einem Fehler nach dem ander
 
 Ich habe profilbild in text umgewandelt, weil bytea mir viele Probleme gemacht hat und ich keine Lust habe tief in die Doku einzusteigen. Die Idee jetzt ist, dass die Bilder in einer seperaten Datenbank liegen und in dieser Datenbank lediglich der Link liegt. Das gleiche Vorgehen mache ich mit der Tabelle foto
 
-Messages und Likes haben timestamps, die aber den datarype object haben. Muss ich fixen.
+Messages und Likes hatten unterschiedliche Datenformate. Habe ich behoben.
+
+Ich weiß nicht wie das mit den Nachrichten in messages_df gedacht war. Wie bereits argumentiert ergibt es keinen Sinn die email als primary key zu benutzen, da sich diese ändern kann. Also möchte ich die to_email auch durch eine Kunde_id ersetzen und so die Tabellen auch verknüpfen könnnen. Als primary nutze ich dann einen srial, da man keinen zusammengesetzten Primärschlüssen aus einer Tabelle benutzen kann.

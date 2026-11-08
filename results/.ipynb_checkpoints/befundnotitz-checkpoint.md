@@ -86,4 +86,8 @@ Da der Fremdschlüssen nicht aus den gleichen Spalten bestehen darf, habe ich ei
 
 Beim befüllen der Tabellen mit Zahlen trete ich mir einem Fehler nach dem anderen ein. Ada sagt es sei ein Fehler in Mail, weil die nicht unique sind. Sie sind aber unique!!! Es sind auch keine NANs drin. Der Fehler war ein einfacher schreibfehler: "name" "nachname". Ich habe dann die ganzen Test von dem df gelöscht, die nachgewiesen haben, dass die Spalten die not null sein sollten es auch waren
 
-Ich ahbe profilbild entfernt, da es nicht Teil des Arbeitsauftrags ist
+Ich habe profilbild in text umgewandelt, weil bytea mir viele Probleme gemacht hat und ich keine Lust habe tief in die Doku einzusteigen. Die Idee jetzt ist, dass die Bilder in einer seperaten Datenbank liegen und in dieser Datenbank lediglich der Link liegt. Das gleiche Vorgehen mache ich mit der Tabelle foto
+
+Messages und Likes hatten unterschiedliche Datenformate. Habe ich behoben.
+
+Ich weiß nicht wie das mit den Nachrichten in messages_df gedacht war. Wie bereits argumentiert ergibt es keinen Sinn die email als primary key zu benutzen, da sich diese ändern kann. Also möchte ich die to_email auch durch eine Kunde_id ersetzen und so die Tabellen auch verknüpfen könnnen. Als primary nutze ich dann einen srial, da man keinen zusammengesetzten Primärschlüssen aus einer Tabelle benutzen kann.
