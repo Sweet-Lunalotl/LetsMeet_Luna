@@ -84,4 +84,8 @@ CREATE TABLE freunde (
 """
 Da der Fremdschlüssen nicht aus den gleichen Spalten bestehen darf, habe ich einen neuen PK eingeführt
 
-Beim befüllen der Tabellen mit Zahlen trete ich mir einem Fehler nach dem anderen ein. Ada sagt es sei ein Fehler in Mail, weil die nicht unique sind. Sie sind aber unique!!! Es sind auch keine NANs drin
+Beim befüllen der Tabellen mit Zahlen trete ich mir einem Fehler nach dem anderen ein. Ada sagt es sei ein Fehler in Mail, weil die nicht unique sind. Sie sind aber unique!!! Es sind auch keine NANs drin. Der Fehler war ein einfacher schreibfehler: "name" "nachname". Ich habe dann die ganzen Test von dem df gelöscht, die nachgewiesen haben, dass die Spalten die not null sein sollten es auch waren
+
+Ich habe profilbild in text umgewandelt, weil bytea mir viele Probleme gemacht hat und ich keine Lust habe tief in die Doku einzusteigen. Die Idee jetzt ist, dass die Bilder in einer seperaten Datenbank liegen und in dieser Datenbank lediglich der Link liegt. Das gleiche Vorgehen mache ich mit der Tabelle foto
+
+Messages und Likes haben timestamps, die aber den datarype object haben. Muss ich fixen.
